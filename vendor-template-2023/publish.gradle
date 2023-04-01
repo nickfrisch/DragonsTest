@@ -158,7 +158,7 @@ publishing {
                 url = releasesRepoUrl
                 credentials {
                     username = "nickfrisch"
-                    password = "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"
+                    password = "GITHUB ACCESS TOKEN"
                 }
             }
             else
