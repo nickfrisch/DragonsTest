@@ -1,25 +1,40 @@
 {
     "fileName": "DragonsTest.json",
     "name": "DragonsTest",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "uuid": "302e20f7-815e-48f8-9dd6-e675ce75b266",
-    "mavenUrls": [
-        "https://maven.pkg.github.com/nickfrisch/DragonsTest"
-    ],
-    "jsonUrl": "https://raw.githubusercontent.com/nickfrisch/DragonsTest/main/DragonsTest.json",
+    "mavenUrls": [],
+    "jsonUrl": "",
     "javaDependencies": [
         {
             "groupId": "org.dragons",
             "artifactId": "dragonstest-java",
-            "version": "0.0.1"
+            "version": "0.0.2"
         }
     ],
-    "jniDependencies": [],
+    "jniDependencies": [
+        {
+            "groupId": "org.dragons",
+            "artifactId": "dragonstest-driver",
+            "version": "0.0.2",
+            "skipInvalidPlatforms": true,
+            "isJar": false,
+            "validPlatforms": [
+                "windowsx86-64",
+                "windowsx86",
+                "linuxarm64",
+                "linuxx86-64",
+                "linuxathena",
+                "linuxarm32",
+                "osxuniversal"
+            ]
+        }
+    ],
     "cppDependencies": [
         {
             "groupId": "org.dragons",
             "artifactId": "dragonstest-cpp",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "libName": "dragonstest",
             "headerClassifier": "headers",
             "sourcesClassifier": "sources",
@@ -34,6 +49,24 @@
                 "linuxx86-64",
                 "osxx86-64",
                 "osxarm64"
+            ]
+        },
+        {
+            "groupId": "org.dragons",
+            "artifactId": "dragonstest-driver",
+            "version": "0.0.2",
+            "libName": "dragonstestDriver",
+            "headerClassifier": "headers",
+            "sharedLibrary": true,
+            "skipInvalidPlatforms": true,
+            "binaryPlatforms": [
+                "windowsx86-64",
+                "windowsx86",
+                "linuxarm64",
+                "linuxx86-64",
+                "linuxathena",
+                "linuxarm32",
+                "osxuniversal"
             ]
         }
     ]
